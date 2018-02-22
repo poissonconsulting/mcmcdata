@@ -119,8 +119,8 @@
       }
     }
   ],
-  "contIntegration": "https://travis-ci.org/poissonconsulting/mcmcrdata",
+  "contIntegration": "https://travis-ci.org/poissonconsulting/mcmcdata",
   "readme": "https://github.com/poissonconsulting/mcmcdata/blob/master/README.md",
-  "fileSize": "81.52KB",
+  "fileSize": "82.013KB",
   "codeRepository": "https://github.com/poissonconsulting/mcmcdata"
 }
