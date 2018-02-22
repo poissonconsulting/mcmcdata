@@ -10,4 +10,5 @@ test_that("summarise", {
   expect_identical(colnames(summarised$data), "homeworld")
   expect_identical(summarised$data$homeworld, "Tatooine")
   expect_identical(pdims(summarised$mcmc), 1L)
+  expect_equal(coef(summarised)$estimate, 8.44, tolerance = 0.001)
 })
