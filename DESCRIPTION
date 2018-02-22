@@ -7,12 +7,12 @@ Description: Manipulates Monte Carlo Markov Chain samples and associated data fr
 License: MIT + file LICENSE
 Depends:
     R (>= 3.3.1),
-    mcmcr (>= 0.0.0.9045),
     dplyr
 Imports:
-    plyr,
     checkr (>= 0.0.2.9002),
     coda,
+    mcmcr (>= 0.0.0.9045),
+    plyr,
     stats
 Suggests:
     covr,

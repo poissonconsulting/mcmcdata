@@ -32,6 +32,18 @@ To install the latest version from GitHub
 devtools::install_github("poissonconsulting/mcmcdata")
 ```
 
+## Demonstration
+```{r}
+library(mcmcdata)
+
+print(mcmc_data_example)
+
+md_ex <- slice(mcmc_data_example, c(1,2,2))
+print(md_ex)
+md_ex <- group_by(md_ex, homeworld, species)
+coef(summarise(md_ex))
+```
+
 ## Citation
 
 ```{r, comment="", echo=FALSE}

@@ -4,12 +4,12 @@
     "http://schema.org"
   ],
   "@type": "SoftwareSourceCode",
-  "identifier": "mcmcrdata",
+  "identifier": "mcmcdata",
   "description": "Manipulates Monte Carlo Markov Chain samples and associated data frames.",
-  "name": "mcmcrdata: Manipulate MCMC Samples and Data Frames",
-  "datePublished": "2018-02-03",
+  "name": "mcmcdata: Manipulate MCMC Samples and Data Frames",
+  "datePublished": "2018-02-21",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.0.9001",
+  "version": "0.0.0.9002",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -58,8 +58,9 @@
   "softwareRequirements": [
     {
       "@type": "SoftwareApplication",
-      "identifier": "abind",
-      "name": "abind",
+      "identifier": "checkr",
+      "name": "checkr",
+      "version": "0.0.2.9002",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -82,62 +83,12 @@
       "@type": "SoftwareApplication",
       "identifier": "mcmcr",
       "name": "mcmcr",
-      "version": "0.0.0.9040"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "checkr",
-      "name": "checkr",
-      "version": "0.0.2.9002",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "graphics",
-      "name": "graphics"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "purrr",
-      "name": "purrr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
+      "version": "0.0.0.9045"
     },
     {
       "@type": "SoftwareApplication",
       "identifier": "plyr",
       "name": "plyr",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "rlang",
-      "name": "rlang",
-      "provider": {
-        "@id": "https://cran.r-project.org",
-        "@type": "Organization",
-        "name": "Central R Archive Network (CRAN)",
-        "url": "https://cran.r-project.org"
-      }
-    },
-    {
-      "@type": "SoftwareApplication",
-      "identifier": "reshape2",
-      "name": "reshape2",
       "provider": {
         "@id": "https://cran.r-project.org",
         "@type": "Organization",
@@ -168,8 +119,8 @@
       }
     }
   ],
-  "contIntegration": "https://travis-ci.org/poissonconsulting/mcmcr",
-  "readme": "https://github.com/poissonconsulting/mcmcrdata/blob/master/README.md",
-  "fileSize": "72.406KB",
-  "codeRepository": "https://github.com/poissonconsulting/mcmcrdata"
+  "contIntegration": "https://travis-ci.org/poissonconsulting/mcmcrdata",
+  "readme": "https://github.com/poissonconsulting/mcmcdata/blob/master/README.md",
+  "fileSize": "81.52KB",
+  "codeRepository": "https://github.com/poissonconsulting/mcmcdata"
 }
