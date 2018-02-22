@@ -1,5 +1,11 @@
 #' Coefficients
 #' 
+#' Gets the coefficient table as a tibble.
+#' 
+#' @param object The mcmc_data object to get the coefficent table for.
+#' @param conf_level A probability specifying the confidence level.
+#' @param estimate A function to calculate the point estimate.
+#' @param ... Unused
 #' @export
 #' @examples 
 #' coef(mcmc_data_example)

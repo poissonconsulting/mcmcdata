@@ -12,8 +12,7 @@ summarise_vector <- function(x, idx, fun) {
 summarise_mcmc <- function(x, idx, fun) {
   x <- plyr::aaply(x, .margins = c(1,2), .fun = summarise_vector, idx = idx,
                      fun = fun, .drop = FALSE)
-  class(x) <- "mcmcarray"
-  x
+  set_class(x, "mcmcarray")
 }
 
 #' Summarise mcmc data
@@ -23,15 +22,14 @@ summarise_mcmc <- function(x, idx, fun) {
 #' @param .fun The function to use to summarise the MCMC samples.
 #' @export
 summarise.mcmc_data <- function(.data, ..., .fun = sum){
+  check_function(.fun)
+  
   data <- .data$data
-  
   if (is.null(groups(data)))  error("mcmc_data must be grouped to summarize")
-  
-  ..IDX <- dplyr::group_indices(data)
-  
+
   mcmc <- .data$mcmc
   
-  .data$mcmcr[[1]] <- summarise_mcmc(.data$mcmcr[[1]], ..IDX, fun = .fun)
+  mcmc <- summarise_mcmc(mcmc, group_indices(data), fun = .fun)
   
   data <- dplyr::summarise(data, ...)
 

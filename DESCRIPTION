@@ -1,7 +1,7 @@
 Package: mcmcdata
 Title: Manipulate MCMC Samples and Data Frames
-Version: 0.0.0.9001
-Date: 2018-02-03
+Version: 0.0.0.9002
+Date: 2018-02-21
 Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
 Description: Manipulates Monte Carlo Markov Chain samples and associated data frames.
 License: MIT + file LICENSE
@@ -10,10 +10,11 @@ Depends:
     mcmcr (>= 0.0.0.9045),
     dplyr
 Imports:
+    plyr,
     checkr (>= 0.0.2.9002),
+    coda,
     stats
 Suggests:
-    coda,
     covr,
     testthat
 Additional_Repositories: http://poissonconsulting.github.io/drat

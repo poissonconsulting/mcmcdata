@@ -5,12 +5,12 @@ as.mcarray.mcmc_data <- function(x, ...) {
 
 #' @export
 as.mcmc.mcmc_data <- function(x, ...) {
-  as.mcmc(x$mcmc)
+  coda::as.mcmc(x$mcmc)
 }
 
 #' @export
 as.mcmc.list.mcmc_data <- function(x, ...) {
-  as.mcmc.list(x$mcmc)
+  coda::as.mcmc.list(x$mcmc)
 }
 
 #' @export

@@ -1,40 +1,30 @@
 #' @export
-combine_samples.mcmcr_data <- function(x, x2, fun = mean, by = NULL, suffix = c(".x", ".y"), ...) {
-  if (!is.mcmcr_data(x2)) error("x2 must be an mcmcr_data")
+combine_samples.mcmc_data <- function(x, x2, fun = mean, by = NULL, suffix = c(".x", ".y"), ...) {
+  if (!is.mcmc_data(x2)) error("x2 must be an mcmc_data")
+  
+  check_missing_colnames(x$data, c("..IDX", "..IDX2"))
+  check_missing_colnames(x2$data, c("..IDX", "..IDX2"))
 
-  check_mcmcr_data(x)
-  check_mcmcr_data(x2)
+  data <- x$data
+  data2 <- x2$data
 
-  data <- as.data.frame(x)
-  data2 <- as.data.frame(x2)
-
-  data["..ID1"] <- 1:nrow(data)
-  data2["..ID2"] <- 1:nrow(data2)
+  data$..IDX <- 1:nrow(data)
+  data2$..IDX2 <- 1:nrow(data2)
+  
   data <- dplyr::inner_join(data2, by = by, suffix = suffix)
 
-  mcmcr <- as.mcmcr(x)
-  mcmcr2 <- as.mcmcr(x2)
+  mcmc <- x$mcmc
+  mcmc2 <- x2$mcmc
+  
+  mcmc <- mcmc[,,data$..IDX,drop = FALSE]
+  class(mcmc) <- "mcmcarray"
 
-  names <- vapply(mcmcr, names, "")
+  mcmc2 <- mcmc2[,,data$..IDX2,drop = FALSE]
+  class(mcmc2) <- "mcmcarray"
 
-  if (!identical(parameters(mcmcr), parameters(mcmcr2)))
-    error("mcmcr components must have the same parameters")
+  mcmc <- combine_samples(mcmc, mcmc2, fun = fun)
 
-  for (i in seq_along(mcmcr)) {
-    mcmcr[[i]] <- mcmcr[[i]][[1]][,,data[[paste0("..ID", i)]], drop = FALSE]
-    class(mcmcr[[i]]) <- "mcmcarray"
-  }
-
-  mcmcr <- combine_samples(mcmcr, mcmcr2, fun = fun)
-
-
-  data <- data[!grepl("^[.][.]ID", colnames(data))]
-  mcmcr <- list(mcmcr)
-  names(mcmcr) <- names[1]
-
-  class(mcmcr) <- "mcmcr"
-
-  x <- mcmcr_data(mcmcr, data)
-  check_mcmcr_data(x)
-  x
+  data$..IDX <- NULL
+  data$..IDX2 <- NULL
+  mcmc_data(mcmc, data)
 }
