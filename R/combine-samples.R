@@ -11,7 +11,7 @@ combine_samples.mcmc_data <- function(x, x2, fun = mean, by = NULL, suffix = c("
   data$..IDX <- 1:nrow(data)
   data2$..IDX2 <- 1:nrow(data2)
   
-  data <- dplyr::inner_join(data2, by = by, suffix = suffix)
+  data <- dplyr::inner_join(data, data2, by = by, suffix = suffix)
 
   mcmc <- x$mcmc
   mcmc2 <- x2$mcmc
