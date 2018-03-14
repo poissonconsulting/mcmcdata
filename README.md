@@ -89,7 +89,7 @@ coef(summarise(md_ex))
 To cite package 'mcmcdata' in publications use:
 
   Joe Thorley (2018). mcmcdata: Manipulate MCMC Samples and Data
-  Frames. R package version 0.0.0.9004.
+  Frames. R package version 0.0.0.9005.
 
 A BibTeX entry for LaTeX users is
 
@@ -97,7 +97,7 @@ A BibTeX entry for LaTeX users is
     title = {mcmcdata: Manipulate MCMC Samples and Data Frames},
     author = {Joe Thorley},
     year = {2018},
-    note = {R package version 0.0.0.9004},
+    note = {R package version 0.0.0.9005},
   }
 ```
 

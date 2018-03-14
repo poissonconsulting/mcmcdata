@@ -1,6 +1,6 @@
 Package: mcmcdata
 Title: Manipulate MCMC Samples and Data Frames
-Version: 0.0.0.9004
+Version: 0.0.0.9005
 Date: 2018-03-14
 Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
 Description: Manipulates Monte Carlo Markov Chain samples and associated data frames.
@@ -9,9 +9,9 @@ Depends:
     R (>= 3.3.1),
     dplyr
 Imports:
-    checkr (>= 0.0.2.9002),
+    checkr (>= 0.1.0.9002),
     coda,
-    mcmcr (>= 0.0.0.9050),
+    mcmcr (>= 0.0.0.9051),
     plyr,
     stats
 Suggests:
