@@ -7,9 +7,9 @@
   "identifier": "mcmcdata",
   "description": "Manipulates Monte Carlo Markov Chain samples and associated data frames.",
   "name": "mcmcdata: Manipulate MCMC Samples and Data Frames",
-  "datePublished": "2018-03-01",
+  "datePublished": "2018-03-14",
   "license": "https://spdx.org/licenses/MIT",
-  "version": "0.0.0.9003",
+  "version": "0.0.0.9004",
   "programmingLanguage": {
     "@type": "ComputerLanguage",
     "name": "R",
@@ -83,7 +83,7 @@
       "@type": "SoftwareApplication",
       "identifier": "mcmcr",
       "name": "mcmcr",
-      "version": "0.0.0.9045"
+      "version": "0.0.0.9050"
     },
     {
       "@type": "SoftwareApplication",
@@ -121,6 +121,6 @@
   ],
   "contIntegration": "https://travis-ci.org/poissonconsulting/mcmcdata",
   "readme": "https://github.com/poissonconsulting/mcmcdata/blob/master/README.md",
-  "fileSize": "82.573KB",
+  "fileSize": "82.586KB",
   "codeRepository": "https://github.com/poissonconsulting/mcmcdata"
 }
