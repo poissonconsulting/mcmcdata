@@ -8,23 +8,16 @@ combine_samples.mcmc_data <- function(x, x2, fun = mean, by = NULL, suffix = c("
   data <- x$data
   data2 <- x2$data
 
-  data$..IDX <- 1:nrow(data)
-  data2$..IDX2 <- 1:nrow(data2)
-  
+  data <- add_IDX(data, 1)
+  data2 <- add_IDX(data2, 2)
+
   data <- dplyr::inner_join(data, data2, by = by, suffix = suffix)
 
-  mcmc <- x$mcmc
-  mcmc2 <- x2$mcmc
-  
-  mcmc <- mcmc[,,data$..IDX,drop = FALSE]
-  class(mcmc) <- "mcmcarray"
-
-  mcmc2 <- mcmc2[,,data$..IDX2,drop = FALSE]
-  class(mcmc2) <- "mcmcarray"
+  mcmc <- filter_mcmcarray(x$mcmc, 1, data = data)
+  mcmc2 <- filter_mcmcarray(x2$mcmc, 2, data = data)
 
   mcmc <- combine_samples(mcmc, mcmc2, fun = fun)
 
-  data$..IDX <- NULL
-  data$..IDX2 <- NULL
+  data <- rm_IDX(data)
   mcmc_data(mcmc, data)
 }
