@@ -9,6 +9,6 @@
 ^CONDUCT\.md$
 ^LICENSE\.md$
 ^docs$
-^document.R$
+^build.R$
 ^codemeta\.json$
 

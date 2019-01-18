@@ -42,6 +42,7 @@ library(mcmcdata)
 print(mcmc_data_example)
 #> $mcmc
 #> [1] 3.718025 4.718025
+#> 
 #> nchains:  2 
 #> niters:  400 
 #> 
@@ -59,6 +60,7 @@ md_ex <- slice(mcmc_data_example, c(1,2,2))
 print(md_ex)
 #> $mcmc
 #> [1] 3.718025 4.718025 4.718025
+#> 
 #> nchains:  2 
 #> niters:  400 
 #> 
@@ -75,7 +77,6 @@ print(md_ex)
 md_ex <- group_by(md_ex, homeworld, species)
 coef(summarise(md_ex))
 #> # A tibble: 2 x 8
-#> # Groups:   homeworld [?]
 #>   homeworld species estimate    sd zscore lower upper  pvalue
 #>   <chr>     <chr>      <dbl> <dbl>  <dbl> <dbl> <dbl>   <dbl>
 #> 1 Tatooine  Droid       9.44 1.80    5.26  6.42 12.5  0.00120
@@ -111,7 +112,7 @@ always welcome.
 
 Please note that this project is released with a [Contributor Code of
 Conduct](CONDUCT.md). By participating in this project you agree to
-abide by its terms.
+abide by its terms
 
 ## Inspiration
 
