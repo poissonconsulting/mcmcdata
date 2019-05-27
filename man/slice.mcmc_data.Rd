@@ -9,9 +9,12 @@
 \arguments{
 \item{.data}{An mcmc_data object}
 
-\item{...}{Integer row values.
+\item{...}{Integer row values.  Provide either positive values to keep,
+or negative values to drop. The values provided must be either all
+positive or all negative.  Indices beyond the number of rows in the
+input are silently ignored.
 
-These arguments are automatically \link[rlang:quo]{quoted} and
+The arguments in \code{...} are automatically \link[rlang:quo]{quoted} and
 \link[rlang:eval_tidy]{evaluated} in the context of the data
 frame. They support \link[rlang:quasiquotation]{unquoting} and
 splicing. See \code{vignette("programming")} for an introduction to

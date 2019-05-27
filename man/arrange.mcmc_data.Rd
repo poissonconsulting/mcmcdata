@@ -9,8 +9,8 @@
 \arguments{
 \item{.data}{An mcmc_data object}
 
-\item{...}{Comma separated list of unquoted variable names. Use
-\code{\link[=desc]{desc()}} to sort a variable in descending order.}
+\item{...}{Comma separated list of unquoted variable names, or expressions
+involving variable names. Use \code{\link[=desc]{desc()}} to sort a variable in descending order.}
 }
 \description{
 Arrange mcmcr data
