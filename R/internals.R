@@ -21,3 +21,5 @@ filter_mcmcarray <- function(mcmc, number, data) {
   mcmc <- mcmc[,,data[[paste0("..IDX", number)]],drop = FALSE]
   set_class(mcmc, "mcmcarray")
 }
+
+err <- function (...) stop(..., call. = FALSE, domain = NA)
