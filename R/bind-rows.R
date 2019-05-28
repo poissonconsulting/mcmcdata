@@ -11,6 +11,5 @@ bind_rows2 <- function(x, y) {
   
   data <- bind_rows(x$data, y$data)
   mcmc <- bind_dimensions(x$mcmc, y$mcmc, along = 1L)
-  print(mcmc)
   mcmc_data(mcmc, data)
 }
