@@ -7,6 +7,5 @@ test_that("as", {
   expect_identical(class(as.mcmcarray(mcmc_data_example)), "mcmcarray")
   expect_identical(class(as.mcmcr(mcmc_data_example)), "mcmcr")
   expect_identical(class(as.data.frame(mcmc_data_example)), "data.frame")
-  expect_identical(class(as_data_frame(mcmc_data_example)), c("tbl_df", "tbl", "data.frame"))
   expect_identical(class(as_tibble(mcmc_data_example)), c("tbl_df", "tbl", "data.frame"))
 })
