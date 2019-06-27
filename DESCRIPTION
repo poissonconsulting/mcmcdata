@@ -16,6 +16,8 @@ Imports:
     stats
 Suggests:
     covr,
+    plyr,
+    doParallel,
     testthat
 Remotes: 
     poissonconsulting/mcmcr,
