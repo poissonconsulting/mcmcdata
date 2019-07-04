@@ -1,6 +1,6 @@
 Package: mcmcdata
 Title: Manipulate MCMC Samples and Data Frames
-Version: 0.0.0.9008
+Version: 0.0.0.9009
 Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
 Description: Manipulates Monte Carlo Markov Chain samples and associated data frames.
 License: MIT + file LICENSE
@@ -10,16 +10,17 @@ Depends:
 Imports:
     checkr,
     coda,
+    term,
     mcmcr,
     mcmcderive,
     plyr,
     stats
 Suggests:
     covr,
-    plyr,
     doParallel,
     testthat
 Remotes: 
+    poissonconsulting/term,
     poissonconsulting/mcmcr,
     poissonconsulting/mcmcderive
 Encoding: UTF-8
