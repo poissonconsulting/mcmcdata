@@ -8,7 +8,7 @@ mcmc_derive.mcmc_data <- function(object, expr = "prediction <- estimate",
   
   data <- as.data.frame(object)
   mcmc <- as.mcmcr(object)
-  parameters(mcmc) <- "estimate"
+  pars(mcmc) <- "estimate"
   values <- c(values, as.list(data))
   mcmc <- mcmc_derive(mcmc, expr = expr, monitor = monitor, values = values,
                       parallel = TRUE)
