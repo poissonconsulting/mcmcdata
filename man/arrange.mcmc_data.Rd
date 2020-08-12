@@ -9,8 +9,8 @@
 \arguments{
 \item{.data}{An mcmc_data object}
 
-\item{...}{Comma separated list of unquoted variable names, or expressions
-involving variable names. Use \code{\link[=desc]{desc()}} to sort a variable in descending order.}
+\item{...}{<\code{\link[dplyr:dplyr_data_masking]{data-masking}}> Variables, or functions or
+variables. Use \code{\link[dplyr:desc]{desc()}} to sort a variable in descending order.}
 }
 \description{
 Arrange mcmcr data

@@ -4,8 +4,7 @@
 \alias{coef.mcmc_data}
 \title{Coefficients}
 \usage{
-\method{coef}{mcmc_data}(object, conf_level = 0.95,
-  estimate = stats::median, ...)
+\method{coef}{mcmc_data}(object, conf_level = 0.95, estimate = stats::median, ...)
 }
 \arguments{
 \item{object}{The mcmc_data object to get the coefficent table for.}

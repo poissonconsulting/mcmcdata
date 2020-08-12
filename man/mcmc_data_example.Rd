@@ -4,7 +4,9 @@
 \name{mcmc_data_example}
 \alias{mcmc_data_example}
 \title{Example mcmc data Object}
-\format{An object of class \code{mcmc_data} of length 2.}
+\format{
+An object of class \code{mcmc_data} of length 2.
+}
 \usage{
 mcmc_data_example
 }
