@@ -17,6 +17,7 @@ Imports:
     stats
 Suggests:
     covr,
+    chk,
     doParallel,
     testthat
 Remotes: 
@@ -25,4 +26,4 @@ Remotes:
     poissonconsulting/mcmcderive
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.1.9000
+RoxygenNote: 7.1.1

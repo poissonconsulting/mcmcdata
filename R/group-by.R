@@ -5,8 +5,8 @@
 #' @export
 #' @examples 
 #' group_by(mcmc_data_example, homeworld, species)
-group_by_.mcmc_data <- function(.data, ..., add = FALSE){
-  .data$data <- dplyr::group_by(.data$data, ..., add = add)
+group_by.mcmc_data <- function(.data, ..., .add = FALSE){
+  .data$data <- dplyr::group_by(.data$data, ..., .add = .add)
   .data
 }
 
