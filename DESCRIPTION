@@ -14,7 +14,8 @@ Imports:
     mcmcr,
     mcmcderive,
     plyr,
-    stats
+    stats,
+    nlist
 Suggests:
     covr,
     chk,
