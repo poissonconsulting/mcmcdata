@@ -1,15 +1,14 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+<!-- badges: start -->
 
 [![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/joethorley/stability-badges#experimental)
-[![Travis-CI Build
-Status](https://travis-ci.org/poissonconsulting/mcmcdata.svg?branch=master)](https://travis-ci.org/poissonconsulting/mcmcdata)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/poissonconsulting/mcmcdata?branch=master&svg=true)](https://ci.appveyor.com/project/poissonconsulting/mcmcdata)
-[![Coverage
-Status](https://img.shields.io/codecov/c/github/poissonconsulting/mcmcdata/master.svg)](https://codecov.io/github/poissonconsulting/mcmcdata?branch=master)
+[![R-CMD-check](https://github.com/poissonconsulting/mcmcdata/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/mcmcdata/actions)
+[![Codecov test
+coverage](https://codecov.io/gh/poissonconsulting/mcmcdata/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/mcmcdata?branch=master)
 [![License:
 MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+<!-- badges: end -->
 
 # mcmcdata
 
@@ -76,31 +75,35 @@ print(md_ex)
 #> [1] "mcmc_data"
 md_ex <- group_by(md_ex, homeworld, species)
 coef(summarise(md_ex))
+#> Warning: The `simplify` argument of `coef()` must be TRUE as of mcmcr 0.4.1.
+#> This warning is displayed once every 8 hours.
+#> Call `lifecycle::last_warnings()` to see where this warning was generated.
 #> # A tibble: 2 x 8
 #>   homeworld species estimate    sd zscore lower upper  pvalue
 #>   <chr>     <chr>      <dbl> <dbl>  <dbl> <dbl> <dbl>   <dbl>
-#> 1 Tatooine  Droid       9.44 1.80    5.26  6.42 12.5  0.00120
-#> 2 Tatooine  Human       3.72 0.901   4.15  2.21  5.23 0.00120
+#> 1 Tatooine  Droid       9.44 1.80    5.26  6.42 12.5  0.00125
+#> 2 Tatooine  Human       3.72 0.901   4.15  2.21  5.23 0.00125
 ```
 
 ## Citation
 
-``` 
+    Warning in citation(package = "mcmcdata"): no date field in DESCRIPTION file of
+    package 'mcmcdata'
+    Warning in citation(package = "mcmcdata"): could not determine year for
+    'mcmcdata' from package DESCRIPTION file
 
-To cite package 'mcmcdata' in publications use:
+    To cite package 'mcmcdata' in publications use:
 
-  Joe Thorley (2018). mcmcdata: Manipulate MCMC Samples and Data
-  Frames. R package version 0.0.0.9005.
+      Joe Thorley (NA). mcmcdata: Manipulate MCMC Samples and Data Frames.
+      R package version 0.0.0.9010.
 
-A BibTeX entry for LaTeX users is
+    A BibTeX entry for LaTeX users is
 
-  @Manual{,
-    title = {mcmcdata: Manipulate MCMC Samples and Data Frames},
-    author = {Joe Thorley},
-    year = {2018},
-    note = {R package version 0.0.0.9005},
-  }
-```
+      @Manual{,
+        title = {mcmcdata: Manipulate MCMC Samples and Data Frames},
+        author = {Joe Thorley},
+        note = {R package version 0.0.0.9010},
+      }
 
 ## Contribution
 
@@ -110,10 +113,13 @@ Please report any
 [Pull requests](https://github.com/poissonconsulting/mcmcdata/pulls) are
 always welcome.
 
-Please note that this project is released with a [Contributor Code of
-Conduct](CONDUCT.md). By participating in this project you agree to
-abide by its terms
+## Code of Conduct
+
+Please note that the mcmcdata project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
 
 ## Inspiration
 
-  - coda and rjags
+-   coda and rjags
