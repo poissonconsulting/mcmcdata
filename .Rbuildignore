@@ -12,3 +12,4 @@
 ^build.R$
 ^codemeta\.json$
 
+^\.github$
