@@ -1,5 +1,3 @@
-context("filter")
-
 test_that("filter", {
   expect_identical(filter(mcmc_data_example), mcmc_data_example)
   

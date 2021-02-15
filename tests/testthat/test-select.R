@@ -1,5 +1,3 @@
-context("select")
-
 test_that("select", {
   expect_identical(select(mcmc_data_example, everything()), mcmc_data_example)
   expect_identical(ncol(select(mcmc_data_example)$data), 0L)

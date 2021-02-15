@@ -1,5 +1,3 @@
-context("group-by")
-
 test_that("group_by", {
   expect_identical(group_by(mcmc_data_example), mcmc_data_example)
   grouped <- group_by(mcmc_data_example, homeworld, species)

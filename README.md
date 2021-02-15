@@ -2,7 +2,8 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 <!-- badges: start -->
 
-[![stability-experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/joethorley/stability-badges#experimental)
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![R-CMD-check](https://github.com/poissonconsulting/mcmcdata/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/mcmcdata/actions)
 [![Codecov test
 coverage](https://codecov.io/gh/poissonconsulting/mcmcdata/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/mcmcdata?branch=master)
@@ -89,19 +90,18 @@ coef(summarise(md_ex))
 
     Warning in citation(package = "mcmcdata"): no date field in DESCRIPTION file of
     package 'mcmcdata'
-    Warning in citation(package = "mcmcdata"): could not determine year for
-    'mcmcdata' from package DESCRIPTION file
 
     To cite package 'mcmcdata' in publications use:
 
-      Joe Thorley (NA). mcmcdata: Manipulate MCMC Samples and Data Frames.
-      R package version 0.0.0.9010.
+      Joe Thorley (2021). mcmcdata: Manipulate MCMC Samples and Data
+      Frames. R package version 0.0.0.9010.
 
     A BibTeX entry for LaTeX users is
 
       @Manual{,
         title = {mcmcdata: Manipulate MCMC Samples and Data Frames},
         author = {Joe Thorley},
+        year = {2021},
         note = {R package version 0.0.0.9010},
       }
 

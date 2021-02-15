@@ -1,5 +1,3 @@
-context("join")
-
 test_that("join", {
   expect_identical(inner_join(mcmc_data_example, select(mcmc_data_example, -films),
                               by = c("homeworld", "species")), mcmc_data_example)

@@ -1,5 +1,3 @@
-context("coef")
-
 test_that("coef", {
   coef <- coef(mcmc_data_example, simplify = TRUE)
   expect_is(coef, "tbl_df")

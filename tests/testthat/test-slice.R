@@ -1,5 +1,3 @@
-context("slice")
-
 test_that("slice", {
   expect_identical(slice(mcmc_data_example), mcmc_data_example)
   

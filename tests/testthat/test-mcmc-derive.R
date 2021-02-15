@@ -1,5 +1,3 @@
-context("derive.mcmc_data")
-
 test_that("derive.mcmc_data", {
   
   mcmc_data <- mcmcdata::mcmc_data_example

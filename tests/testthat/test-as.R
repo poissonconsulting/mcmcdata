@@ -1,5 +1,3 @@
-context("as")
-
 test_that("as", {
   expect_identical(class(mcmcr::as.mcarray(mcmc_data_example)), "mcarray")
   chk::expect_chk_error(class(coda::as.mcmc(mcmc_data_example)))
