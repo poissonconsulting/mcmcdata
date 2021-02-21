@@ -2,7 +2,7 @@
 % Please edit documentation in R/join.R
 \name{right_join.mcmc_data}
 \alias{right_join.mcmc_data}
-\title{Left join mcmc data}
+\title{Right join mcmc data}
 \usage{
 \method{right_join}{mcmc_data}(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...)
 }
@@ -45,5 +45,5 @@ Should be a character vector of length 2.}
 \item{...}{Other parameters passed onto methods.}
 }
 \description{
-Left join mcmc data
+Right join mcmc data
 }

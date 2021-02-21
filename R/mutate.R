@@ -1,3 +1,6 @@
+#' @export
+dplyr::mutate
+
 #' Mutate mcmc_data
 #'
 #' @inheritParams dplyr::rename

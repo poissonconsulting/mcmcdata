@@ -15,6 +15,9 @@ summarise_mcmc <- function(x, idx, fun) {
   set_class(x, "mcmcarray")
 }
 
+#' @export
+dplyr::summarise
+
 #' Summarise mcmc data
 #'
 #' @inheritParams dplyr::summarise

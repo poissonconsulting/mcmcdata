@@ -1,3 +1,9 @@
+#' @export
+dplyr::group_by
+
+#' @export
+dplyr::ungroup
+
 #' Group mcmc data
 #'
 #' @inheritParams dplyr::group_by

@@ -1,3 +1,6 @@
+#' @export
+dplyr::arrange
+
 #' Arrange mcmcr data
 #'
 #' @inheritParams dplyr::arrange

@@ -4,7 +4,7 @@
 \alias{anti_join.mcmc_data}
 \title{Anti join mcmc data}
 \usage{
-\method{anti_join}{mcmc_data}(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...)
+\method{anti_join}{mcmc_data}(x, y, by = NULL, copy = FALSE, ...)
 }
 \arguments{
 \item{x}{A pair of data frames, data frame extensions (e.g. a tibble), or
@@ -37,10 +37,6 @@ use \code{by = character()}.}
 and \code{copy} is \code{TRUE}, then \code{y} will be copied into the
 same src as \code{x}.  This allows you to join tables across srcs, but
 it is a potentially expensive operation so you must opt into it.}
-
-\item{suffix}{If there are non-joined duplicate variables in \code{x} and
-\code{y}, these suffixes will be added to the output to disambiguate them.
-Should be a character vector of length 2.}
 
 \item{...}{Other parameters passed onto methods.}
 }

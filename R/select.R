@@ -1,3 +1,6 @@
+#' @export
+dplyr::select
+
 #' Select mcmcr data
 #'
 #' @inheritParams dplyr::select

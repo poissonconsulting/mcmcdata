@@ -1,3 +1,6 @@
+#' @export
+dplyr::slice
+
 #' Slice mcmcr data
 #'
 #' @inheritParams dplyr::slice

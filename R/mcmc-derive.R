@@ -1,3 +1,6 @@
+#' @export
+mcmcderive::mcmc_derive
+
 #' mcmc_derive mcmc_data
 #' 
 #' @param object An mcmc_data object
