@@ -115,7 +115,7 @@
     </div>
 
     <pre class="usage"><span class='co'># S3 method for mcmc_data</span>
-<span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>.data</span>, <span class='va'>...</span><span class='op'>)</span></pre>
+<span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>.data</span>, <span class='va'>...</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
@@ -126,7 +126,7 @@
     </tr>
     <tr>
       <th>...</th>
-      <td><p>For <code>slice()</code>: &lt;<code><a href='https://dplyr.tidyverse.org/reference/dplyr_data_masking.html'>data-masking</a></code>&gt; Integer row
+      <td><p>For <code><a href='https://dplyr.tidyverse.org/reference/slice.html'>slice()</a></code>: &lt;<code><a href='https://dplyr.tidyverse.org/reference/dplyr_data_masking.html'>data-masking</a></code>&gt; Integer row
 values.</p>
 <p>Provide either positive values to keep, or negative values to drop.
 The values provided must be either all positive or all negative.
@@ -137,7 +137,7 @@ Indices beyond the number of rows in the input are silently ignored.</p>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'><a href='https://rdrr.io/r/stats/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>mcmc_data_example</span>, <span class='va'>species</span> <span class='op'>==</span> <span class='st'>"Droid"</span><span class='op'>)</span>
+    <pre class="examples"><div class='input'><span class='fu'><a href='https://dplyr.tidyverse.org/reference/filter.html'>filter</a></span><span class='op'>(</span><span class='va'>mcmc_data_example</span>, <span class='va'>species</span> <span class='op'>==</span> <span class='st'>"Droid"</span><span class='op'>)</span>
 </div><div class='output co'>#&gt; $mcmc
 #&gt; [1] 4.718025
 #&gt; 

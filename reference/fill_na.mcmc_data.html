@@ -40,7 +40,8 @@
 
 
 <meta property="og:title" content="Fill Missing Values — fill_na.mcmc_data" />
-<meta property="og:description" content="Fills an object's missing values while preserving the object's class." />
+<meta property="og:description" content="Fills all of an object's missing values
+while preserving the object's dimensionality and class." />
 
 
 
@@ -111,7 +112,8 @@
     </div>
 
     <div class="ref-description">
-    <p>Fills an object's missing values while preserving the object's class.</p>
+    <p>Fills all of an object's missing values
+while preserving the object's dimensionality and class.</p>
     </div>
 
     <pre class="usage"><span class='co'># S3 method for mcmc_data</span>
@@ -137,6 +139,10 @@
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>The modified object.</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>It should only be defined for objects with values of consistent class ie
+not standard data.frames.</p>
     <h2 class="hasAnchor" id="methods-by-class-"><a class="anchor" href="#methods-by-class-"></a>Methods (by class)</h2>
 
     
