@@ -19,6 +19,9 @@
     <loc>https://poissonconsulting.github.io/mcmcdata//reference/coef.mcmc_data.html</loc>
   </url>
   <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata//reference/fill_na.mcmc_data.html</loc>
+  </url>
+  <url>
     <loc>https://poissonconsulting.github.io/mcmcdata//reference/filter.mcmc_data.html</loc>
   </url>
   <url>
@@ -44,6 +47,9 @@
   </url>
   <url>
     <loc>https://poissonconsulting.github.io/mcmcdata//reference/mutate.mcmc_data.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata//reference/reexports.html</loc>
   </url>
   <url>
     <loc>https://poissonconsulting.github.io/mcmcdata//reference/rename.mcmc_data.html</loc>
