@@ -9,7 +9,7 @@
   expr = "new_par <- par",
   values = list(),
   parameter = "par",
-  monitor = "^new_par$",
+  monitor = "new_par",
   parallel = FALSE,
   silent = getOption("mcmcderive.silent", FALSE),
   ...
@@ -24,7 +24,7 @@
 
 \item{parameter}{A string of the name of the current MCMC samples in expr.}
 
-\item{monitor}{A regular expression identifying the name of the derived parameter to monitor in expr.}
+\item{monitor}{A string of the name of the derived parameter to return.}
 
 \item{parallel}{A flag specifying whether to generate the derived parameters
 for each chain in parallel.}

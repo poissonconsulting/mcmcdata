@@ -20,7 +20,7 @@ mcmc_derive_data <- function(object, ...) {
 #' @param expr A string of the R expression.
 #' @param values A named list of values for objects not in object$data
 #' @param parameter A string of the name of the current MCMC samples in expr.
-#' @param monitor A regular expression identifying the name of the derived parameter to monitor in expr.
+#' @param monitor A string of the name of the derived parameter to return.
 #' @param ... Unused.
 #' @return An mcmc_data object.
 #'
@@ -28,7 +28,7 @@ mcmc_derive_data <- function(object, ...) {
 mcmc_derive_data.mcmc_data <- function(object, expr = "new_par <- par", 
                                   values = list(), 
                                   parameter = "par",
-                                  monitor = "^new_par$",
+                                  monitor = "new_par",
                                   parallel = FALSE, 
                                   silent = getOption("mcmcderive.silent", FALSE),
                                   ...) {
@@ -38,6 +38,7 @@ mcmc_derive_data.mcmc_data <- function(object, expr = "new_par <- par",
   mcmc <- as.mcmcr(object)
   pars(mcmc) <- parameter
   values <- c(values, as.list(data))
+  monitor <- paste0("^", monitor, "$", collapse = "")
   mcmc <- mcmc_derive(mcmc, expr = expr, monitor = monitor, values = values,
                       parallel = parallel, silent = silent)
   mcmc_data(mcmc, data)
