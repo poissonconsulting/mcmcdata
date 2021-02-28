@@ -9,7 +9,7 @@ check_mcmc_data(x, x_name = substitute(x))
 \arguments{
 \item{x}{The object to check.}
 
-\item{x_name}{A string of the name of the object.}
+\item{x_name}{A string of the name of the object x.}
 }
 \value{
 An invisible copy of x (if it doesn't throw an error).
