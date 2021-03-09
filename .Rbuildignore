@@ -9,9 +9,6 @@
 ^CONDUCT\.md$
 ^LICENSE\.md$
 ^docs$
-^build.R$
-^codemeta\.json$
-
 ^\.github$
 ^scripts$
 ^_pkgdown\.yml$
