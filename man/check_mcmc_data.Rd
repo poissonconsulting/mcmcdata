@@ -4,7 +4,7 @@
 \alias{check_mcmc_data}
 \title{Check mcmc data}
 \usage{
-check_mcmc_data(x, x_name = substitute(x))
+check_mcmc_data(x, x_name = NULL)
 }
 \arguments{
 \item{x}{The object to check.}

@@ -8,7 +8,7 @@ Depends:
     R (>= 3.3.0)
 Imports:
     abind,
-    checkr,
+    chk,
     coda,
     dplyr,
     term,
@@ -20,7 +20,6 @@ Imports:
     nlist
 Suggests:
     covr,
-    chk,
     doParallel,
     testthat
 Remotes: 

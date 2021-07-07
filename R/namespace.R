@@ -1,4 +1,4 @@
-#' @import checkr term mcmcr dplyr
+#' @import chk term mcmcr dplyr
 #' @importFrom coda as.mcmc as.mcmc.list
 #' @importFrom stats coef
 #' @importFrom tidyr replace_na

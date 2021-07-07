@@ -25,7 +25,7 @@ dplyr::summarise
 #' @param .fun The function to use to summarise the MCMC samples.
 #' @export
 summarise.mcmc_data <- function(.data, ..., .fun = sum){
-  check_function(.fun)
+  chk_function(.fun)
   
   data <- .data$data
   if (is.null(groups(data)))  error("mcmc_data must be grouped to summarize")
