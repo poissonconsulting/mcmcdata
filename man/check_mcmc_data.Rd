@@ -9,7 +9,7 @@ check_mcmc_data(x, x_name = NULL)
 \arguments{
 \item{x}{The object to check.}
 
-\item{x_name}{A string of the name of the object x.}
+\item{x_name}{A string of the name of object x or NULL.}
 }
 \value{
 An invisible copy of x (if it doesn't throw an error).

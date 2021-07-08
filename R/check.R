@@ -2,7 +2,7 @@
 #' 
 #' Checks an object is a \code{mcmc_data}.
 #' 
-#' @inheritParams checkr::check_integer
+#' @inheritParams chk::chk_integer
 #' @return An invisible copy of x (if it doesn't throw an error).
 #' @export
 #'
