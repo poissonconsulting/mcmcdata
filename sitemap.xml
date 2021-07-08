@@ -1,7 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/404.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/CODE_OF_CONDUCT.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/CONTRIBUTING.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/LICENSE-text.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/LICENSE.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/SUPPORT.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/authors.html</loc>
+  </url>
+  <url>
     <loc>https://poissonconsulting.github.io/mcmcdata/index.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/pull_request_template.html</loc>
   </url>
   <url>
     <loc>https://poissonconsulting.github.io/mcmcdata/reference/anti_join.mcmc_data.html</loc>
@@ -26,6 +50,9 @@
   </url>
   <url>
     <loc>https://poissonconsulting.github.io/mcmcdata/reference/group_by.mcmc_data.html</loc>
+  </url>
+  <url>
+    <loc>https://poissonconsulting.github.io/mcmcdata/reference/index.html</loc>
   </url>
   <url>
     <loc>https://poissonconsulting.github.io/mcmcdata/reference/inner_join.mcmc_data.html</loc>
