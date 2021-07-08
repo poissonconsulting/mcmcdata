@@ -23,11 +23,11 @@ mcmc_derive.mcmc_data <- function(object, expr = "new_par <- par",
                                   parallel = FALSE, 
                                   silent = getOption("mcmcderive.silent", FALSE),
                                   ...) {
-  check_string(expr)
-  check_string(monitor)
-  check_string(parameter)
-  check_flag(parallel)
-  check_unused(...)
+  chk_string(expr)
+  chk_string(monitor)
+  chk_string(parameter)
+  chk_flag(parallel)
+  chk_unused(...)
   
   data <- as.data.frame(object)
   mcmc <- as.mcmcr(object)

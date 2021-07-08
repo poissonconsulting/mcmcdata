@@ -9,7 +9,7 @@ dplyr::slice
 #' @examples 
 #' slice(mcmc_data_example, 1L)
 slice.mcmc_data <- function(.data, ...){
-  check_missing_colnames(.data$data, "..IDX")
+  chk_not_subset(colnames(.data$data), "..IDX")
   
   data <- .data$data
   data$..IDX <- 1:nrow(data)

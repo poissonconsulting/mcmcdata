@@ -32,7 +32,7 @@ mcmc_derive_data.mcmc_data <- function(object, expr = "new_par <- par",
                                   parallel = FALSE, 
                                   silent = getOption("mcmcderive.silent", FALSE),
                                   ...) {
-   check_unused(...)
+   chk_unused(...)
   
   data <- as.data.frame(object)
   mcmc <- as.mcmcr(object)

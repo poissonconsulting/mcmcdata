@@ -7,8 +7,8 @@ dplyr::anti_join
 #' @export
 anti_join.mcmc_data <- function(x, y, by = NULL, copy = FALSE, ...){
   y <- as.data.frame(y)
-  check_missing_colnames(x$data, "..IDX")
-  check_missing_colnames(y, "..IDX")
+  chk_not_subset(colnames(x$data), "..IDX")
+  chk_not_subset(colnames(y), "..IDX")
   
   data <- x$data
   data$..IDX <- 1:nrow(data)
@@ -31,8 +31,8 @@ dplyr::semi_join
 #' @export
 semi_join.mcmc_data <- function(x, y, by = NULL, copy = FALSE, ...){
   y <- as.data.frame(y)
-  check_missing_colnames(x$data, "..IDX")
-  check_missing_colnames(y, "..IDX")
+  chk_not_subset(colnames(x$data), "..IDX")
+  chk_not_subset(colnames(y), "..IDX")
   
   data <- x$data
   data$..IDX <- 1:nrow(data)
@@ -55,8 +55,8 @@ dplyr::inner_join
 #' @export
 inner_join.mcmc_data <- function(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...){
   y <- as.data.frame(y)
-  check_missing_colnames(x$data, "..IDX")
-  check_missing_colnames(y, "..IDX")
+  chk_not_subset(colnames(x$data), "..IDX")
+  chk_not_subset(colnames(y), "..IDX")
   
   data <- x$data
   data$..IDX <- 1:nrow(data)
@@ -79,8 +79,8 @@ dplyr::left_join
 #' @export
 left_join.mcmc_data <- function(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...){
   y <- as.data.frame(y)
-  check_missing_colnames(x$data, "..IDX")
-  check_missing_colnames(y, "..IDX")
+  chk_not_subset(colnames(x$data), "..IDX")
+  chk_not_subset(colnames(y), "..IDX")
   
   data <- x$data
   data$..IDX <- 1:nrow(data)
@@ -103,8 +103,8 @@ dplyr::right_join
 #' @export
 right_join.mcmc_data <- function(x, y, by = NULL, copy = FALSE, suffix = c(".x", ".y"), ...){
   y <- as.data.frame(y)
-  check_missing_colnames(x$data, "..IDX")
-  check_missing_colnames(y, "..IDX")
+  chk_not_subset(colnames(x$data), "..IDX")
+  chk_not_subset(colnames(y), "..IDX")
   
   data <- x$data
   data$..IDX <- 1:nrow(data)
