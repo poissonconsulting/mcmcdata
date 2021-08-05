@@ -1,32 +1,37 @@
 Package: mcmcdata
 Title: Manipulate MCMC Samples and Data Frames
 Version: 0.0.0.9010
-Authors@R: person("Joe", "Thorley", email = "joe@poissonconsulting.ca", role = c("aut", "cre"))
-Description: Manipulates Monte Carlo Markov Chain samples and associated data frames.
+Authors@R: 
+    person(given = "Joe",
+           family = "Thorley",
+           role = c("aut", "cre"),
+           email = "joe@poissonconsulting.ca")
+Description: Manipulates Monte Carlo Markov Chain samples and associated
+    data frames.
 License: MIT + file LICENSE
 Depends:
-    R (>= 3.3.0)
+    R (>= 4.0)
 Imports:
     abind,
     chk,
     coda,
     dplyr,
-    term,
-    mcmcr,
     mcmcderive,
+    mcmcr,
+    nlist,
     plyr,
     stats,
-    tidyr,
-    nlist
+    term,
+    tidyr
 Suggests:
     covr,
     doParallel,
     testthat
 Remotes: 
-    poissonconsulting/term,
-    poissonconsulting/mcmcr,
     poissonconsulting/mcmcderive,
-    poissonconsulting/nlist
+    poissonconsulting/mcmcr,
+    poissonconsulting/nlist,
+    poissonconsulting/term
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
