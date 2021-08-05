@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Coefficients — coef.mcmc_data • mcmcdata</title>
+<title>Changelog • mcmcdata</title>
 
 
 <!-- jquery -->
@@ -39,8 +39,7 @@
 
 
 
-<meta property="og:title" content="Coefficients — coef.mcmc_data" />
-<meta property="og:description" content="Gets the coefficient table as a tibble." />
+<meta property="og:title" content="Changelog" />
 
 
 
@@ -67,7 +66,7 @@
   <body data-spy="scroll" data-target="#toc">
     
 
-    <div class="container template-reference-topic">
+    <div class="container template-news">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -108,57 +107,23 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Coefficients</h1>
-    
-    <div class="hidden name"><code>coef.mcmc_data.Rd</code></div>
+      <h1 data-toc-skip>Changelog <small></small></h1>
+      
     </div>
 
-    <div class="ref-description">
-    <p>Gets the coefficient table as a tibble.</p>
-    </div>
-
-    <div class="ref-usage sourceCode"><pre class='sourceCode r'><code><span class='co'># S3 method for mcmc_data</span>
-<span class='fu'><a href='https://rdrr.io/r/stats/coef.html'>coef</a></span><span class='op'>(</span><span class='va'>object</span>, conf_level <span class='op'>=</span> <span class='fl'>0.95</span>, estimate <span class='op'>=</span> <span class='fu'>stats</span><span class='fu'>::</span><span class='va'><a href='https://rdrr.io/r/stats/median.html'>median</a></span>, <span class='va'>...</span><span class='op'>)</span></code></pre></div>
-
-    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
-    <table class="ref-arguments">
-    <colgroup><col class="name" /><col class="desc" /></colgroup>
-    <tr>
-      <th>object</th>
-      <td><p>The mcmc_data object to get the coefficent table for.</p></td>
-    </tr>
-    <tr>
-      <th>conf_level</th>
-      <td><p>A probability specifying the confidence level.</p></td>
-    </tr>
-    <tr>
-      <th>estimate</th>
-      <td><p>A function to calculate the point estimate.</p></td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <td><p>Unused</p></td>
-    </tr>
-    </table>
-
-
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <div class="ref-examples sourceCode"><pre class='sourceCode r'><code><span class='r-in'><span class='fu'><a href='https://rdrr.io/r/stats/coef.html'>coef</a></span><span class='op'>(</span><span class='va'>mcmc_data_example</span><span class='op'>)</span></span>
-<span class='r-wrn co'><span class='r-pr'>#&gt;</span> <span class='warning'>Warning: </span>The `simplify` argument of `coef()` must be TRUE as of mcmcr 0.4.1.</span>
-<span class='r-wrn co'><span class='r-pr'>#&gt;</span> <span style='color: #555555;'>This warning is displayed once every 8 hours.</span></span>
-<span class='r-wrn co'><span class='r-pr'>#&gt;</span> <span style='color: #555555;'>Call `lifecycle::last_warnings()` to see where this warning was generated.</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> <span style='color: #949494;'># A tibble: 2 × 9</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>   homeworld species films     estimate    sd zscore lower upper  pvalue</span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>     <span style='color: #949494; font-style: italic;'>&lt;chr&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;list&gt;</span>       <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>  <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span> <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span>   <span style='color: #949494; font-style: italic;'>&lt;dbl&gt;</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> <span style='color: #BCBCBC;'>1</span> Tatooine  Human   <span style='color: #949494;'>&lt;chr [5]&gt;</span>     3.72 0.901   4.15  2.21  5.23 0.001<span style='text-decoration: underline;'>25</span></span>
-<span class='r-out co'><span class='r-pr'>#&gt;</span> <span style='color: #BCBCBC;'>2</span> Tatooine  Droid   <span style='color: #949494;'>&lt;chr [6]&gt;</span>     4.72 0.901   5.26  3.21  6.23 0.001<span style='text-decoration: underline;'>25</span></span>
-</code></pre></div>
+    <div id="mcmcdata-0009010" class="section level1">
+<h1 class="page-header" data-toc-text="0.0.0.9010">
+<a href="#mcmcdata-0009010" class="anchor" aria-hidden="true"></a>mcmcdata 0.0.0.9010</h1>
+<ul><li>Added a <code>NEWS.md</code> file to track changes to the package.</li>
+</ul></div>
   </div>
+
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
       <h2 data-toc-skip>Contents</h2>
     </nav>
   </div>
+
 </div>
 
 
