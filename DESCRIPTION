@@ -1,6 +1,6 @@
 Package: mcmcdata
 Title: Manipulate MCMC Samples and Data Frames
-Version: 0.0.1
+Version: 0.0.1.9000
 Authors@R: 
     person(given = "Joe",
            family = "Thorley",
