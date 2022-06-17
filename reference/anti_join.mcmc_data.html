@@ -57,10 +57,14 @@
 <dd><p>A pair of data frames, data frame extensions (e.g. a tibble), or
 lazy data frames (e.g. from dbplyr or dtplyr). See <em>Methods</em>, below, for
 more details.</p></dd>
+
+
 <dt>y</dt>
 <dd><p>A pair of data frames, data frame extensions (e.g. a tibble), or
 lazy data frames (e.g. from dbplyr or dtplyr). See <em>Methods</em>, below, for
 more details.</p></dd>
+
+
 <dt>by</dt>
 <dd><p>A character vector of variables to join by.</p>
 <p>If <code>NULL</code>, the default, <code>*_join()</code> will perform a natural join, using all
@@ -75,13 +79,18 @@ For example, <code>by = c("a" = "b", "c" = "d")</code> will match <code>x$a</cod
 <code>x$c</code> to <code>y$d</code>.</p>
 <p>To perform a cross-join, generating all combinations of <code>x</code> and <code>y</code>,
 use <code>by = character()</code>.</p></dd>
+
+
 <dt>copy</dt>
 <dd><p>If <code>x</code> and <code>y</code> are not from the same data source,
 and <code>copy</code> is <code>TRUE</code>, then <code>y</code> will be copied into the
 same src as <code>x</code>.  This allows you to join tables across srcs, but
 it is a potentially expensive operation so you must opt into it.</p></dd>
+
+
 <dt>...</dt>
 <dd><p>Other parameters passed onto methods.</p></dd>
+
 </dl></div>
 
   </div>
@@ -96,7 +105,7 @@ it is a potentially expensive operation so you must opt into it.</p></dd>
 </div>
 
 <div class="pkgdown">
-  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.9000.</p>
+  <p></p><p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.4.9000.</p>
 </div>
 
       </footer></div>
