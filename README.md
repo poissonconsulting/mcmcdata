@@ -4,7 +4,7 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-[![R-CMD-check](https://github.com/poissonconsulting/mcmcdata/workflows/R-CMD-check/badge.svg)](https://github.com/poissonconsulting/mcmcdata/actions)
+[![R-CMD-check](https://github.com/poissonconsulting/mcmcdata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/poissonconsulting/mcmcdata/actions/workflows/R-CMD-check.yaml)
 [![Codecov test
 coverage](https://codecov.io/gh/poissonconsulting/mcmcdata/branch/master/graph/badge.svg)](https://codecov.io/gh/poissonconsulting/mcmcdata?branch=master)
 [![License:
@@ -29,15 +29,11 @@ To install the latest version from GitHub
 
 ``` r
 library(mcmcdata)
-#> Loading required package: dplyr
 #> 
-#> Attaching package: 'dplyr'
-#> The following objects are masked from 'package:stats':
+#> Attaching package: 'mcmcdata'
+#> The following object is masked from 'package:stats':
 #> 
-#>     filter, lag
-#> The following objects are masked from 'package:base':
-#> 
-#>     intersect, setdiff, setequal, union
+#>     filter
 
 print(mcmc_data_example)
 #> $mcmc
@@ -47,7 +43,7 @@ print(mcmc_data_example)
 #> niters:  400 
 #> 
 #> $data
-#> # A tibble: 2 x 3
+#> # A tibble: 2 × 3
 #>   homeworld species films    
 #>   <chr>     <chr>   <list>   
 #> 1 Tatooine  Human   <chr [5]>
@@ -65,7 +61,7 @@ print(md_ex)
 #> niters:  400 
 #> 
 #> $data
-#> # A tibble: 3 x 3
+#> # A tibble: 3 × 3
 #>   homeworld species films    
 #>   <chr>     <chr>   <list>   
 #> 1 Tatooine  Human   <chr [5]>
@@ -76,33 +72,31 @@ print(md_ex)
 #> [1] "mcmc_data"
 md_ex <- group_by(md_ex, homeworld, species)
 coef(summarise(md_ex))
-#> Warning: The `simplify` argument of `coef()` must be TRUE as of mcmcr 0.4.1.
-#> This warning is displayed once every 8 hours.
-#> Call `lifecycle::last_warnings()` to see where this warning was generated.
-#> # A tibble: 2 x 8
-#>   homeworld species estimate    sd zscore lower upper  pvalue
-#>   <chr>     <chr>      <dbl> <dbl>  <dbl> <dbl> <dbl>   <dbl>
-#> 1 Tatooine  Droid       9.44 1.80    5.26  6.42 12.5  0.00125
-#> 2 Tatooine  Human       3.72 0.901   4.15  2.21  5.23 0.00125
+#> # A tibble: 2 × 6
+#>   homeworld species estimate lower upper svalue
+#>   <chr>     <chr>      <dbl> <dbl> <dbl>  <dbl>
+#> 1 Tatooine  Droid       9.44  6.42 12.5    9.65
+#> 2 Tatooine  Human       3.72  2.21  5.23   9.65
 ```
 
 ## Citation
 
     Warning in citation(package = "mcmcdata"): no date field in DESCRIPTION file of
     package 'mcmcdata'
+    Warning in citation(package = "mcmcdata"): could not determine year for
+    'mcmcdata' from package DESCRIPTION file
 
     To cite package 'mcmcdata' in publications use:
 
-      Joe Thorley (2021). mcmcdata: Manipulate MCMC Samples and Data
-      Frames. R package version 0.0.0.9010.
+      Thorley J (????). _mcmcdata: Manipulate MCMC Samples and Data
+      Frames_. R package version 0.0.1.9000.
 
     A BibTeX entry for LaTeX users is
 
       @Manual{,
         title = {mcmcdata: Manipulate MCMC Samples and Data Frames},
         author = {Joe Thorley},
-        year = {2021},
-        note = {R package version 0.0.0.9010},
+        note = {R package version 0.0.1.9000},
       }
 
 ## Contribution
@@ -122,4 +116,4 @@ By contributing to this project, you agree to abide by its terms.
 
 ## Inspiration
 
--   coda and rjags
+- coda and rjags
