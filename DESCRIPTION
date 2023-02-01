@@ -20,6 +20,7 @@ Imports:
     mcmcr,
     plyr,
     stats,
+    stringr,
     term,
     tidyr
 Suggests:

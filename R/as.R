@@ -24,11 +24,6 @@ as.mcmcr.mcmc_data <- function(x, ...) {
 }
 
 #' @export
-as_tibble.mcmc_data <- function(x, ...) {
-  dplyr::as_tibble(x$data)
-}
-
-#' @export
 as.data.frame.mcmc_data <- function(x, ...) {
   as.data.frame(x$data)
 }
