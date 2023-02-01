@@ -18,7 +18,6 @@ Imports:
     dplyr,
     mcmcderive,
     mcmcr,
-    nlist,
     plyr,
     stats,
     term,
