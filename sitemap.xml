@@ -1,117 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/404.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/CONTRIBUTING.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/SUPPORT.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/index.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/pull_request_template.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/anti_join.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/arrange.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/as_tibble.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/bind_rows2.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/check_mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/coef.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/fill_na.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/filter.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/group_by.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/inner_join.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/is.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/left_join.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_data_example.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_derive.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_derive_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_derive_data.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/mutate.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/reexports.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/rename.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/replace_na.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/right_join.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/select.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/semi_join.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/slice.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/summarise.mcmc_data.html</loc>
-  </url>
-  <url>
-    <loc>https://poissonconsulting.github.io/mcmcdata/reference/ungroup.mcmc_data.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/404.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/CONTRIBUTING.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/LICENSE-text.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/LICENSE.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/SUPPORT.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/authors.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/index.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/news/index.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/anti_join.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/arrange.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/as_tibble.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/bind_rows2.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/check_mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/coef.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/fill_na.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/filter.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/group_by.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/index.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/inner_join.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/is.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/left_join.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_data_example.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_derive.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_derive_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/mcmc_derive_data.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/mutate.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/reexports.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/rename.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/replace_na.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/right_join.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/select.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/semi_join.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/slice.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/summarise.mcmc_data.html</loc></url>
+<url><loc>https://poissonconsulting.github.io/mcmcdata/reference/ungroup.mcmc_data.html</loc></url>
 </urlset>
+
