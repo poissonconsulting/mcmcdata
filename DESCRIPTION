@@ -5,7 +5,8 @@ Authors@R:
     person(given = "Joe",
            family = "Thorley",
            role = c("aut", "cre"),
-           email = "joe@poissonconsulting.ca")
+           email = "joe@poissonconsulting.ca",
+           comment = c(ORCID = "0000-0002-7683-4592"))
 Description: Manipulates Monte Carlo Markov Chain samples and associated
     data frames.
 License: MIT + file LICENSE
