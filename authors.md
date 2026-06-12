@@ -4,7 +4,7 @@
 
 - **[Joe
   Thorley](https://www.poissonconsulting.ca/author/joe-thorley/)**.
-  Author, maintainer.
+  Author, maintainer. [](https://orcid.org/0000-0002-7683-4592)
 
 ## Citation
 
