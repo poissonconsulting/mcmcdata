@@ -2,11 +2,11 @@
 mcmcderive::mcmc_derive
 
 #' mcmc_derive mcmc_data
-#' 
+#'
 #' Gets mcmcr object of one or more derived parameters.
 #' To return an mcmc_data object use mcmc_derive_data().
 #' By default the current parameter is call par.
-#' 
+#'
 #' @inheritParams mcmcderive::mcmc_derive
 #' @param object An mcmc_data object
 #' @param expr A string of the R expression.
@@ -16,23 +16,31 @@ mcmcderive::mcmc_derive
 #' @return An mcmcr object of the derived parameters.
 #'
 #' @export
-mcmc_derive.mcmc_data <- function(object, expr = "new_par <- par", 
-                                  values = list(), 
-                                  parameter = "par",
-                                  monitor = ".*",
-                                  parallel = FALSE, 
-                                  silent = getOption("mcmcderive.silent", FALSE),
-                                  ...) {
+mcmc_derive.mcmc_data <- function(
+  object,
+  expr = "new_par <- par",
+  values = list(),
+  parameter = "par",
+  monitor = ".*",
+  parallel = FALSE,
+  silent = getOption("mcmcderive.silent", FALSE),
+  ...
+) {
   chk_string(expr)
   chk_string(monitor)
   chk_string(parameter)
   chk_flag(parallel)
   chk_unused(...)
-  
+
   data <- as.data.frame(object)
   mcmc <- as.mcmcr(object)
   pars(mcmc) <- parameter
   values <- c(values, as.list(data))
-  mcmc_derive(mcmc, expr = expr, monitor = monitor, values = values,
-                      parallel = parallel)
+  mcmc_derive(
+    mcmc,
+    expr = expr,
+    monitor = monitor,
+    values = values,
+    parallel = parallel
+  )
 }

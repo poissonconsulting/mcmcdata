@@ -5,7 +5,7 @@ tidyr::replace_na
 #'
 #' @inheritParams tidyr::replace_na
 #' @export
-replace_na.mcmc_data <- function(data, replace, ...){
+replace_na.mcmc_data <- function(data, replace, ...) {
   data$data <- tidyr::replace_na(data$data, replace = replace, ...)
   data
 }
