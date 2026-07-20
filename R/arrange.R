@@ -6,19 +6,19 @@ dplyr::arrange
 #' @inheritParams dplyr::arrange
 #' @param .data An mcmc_data object
 #' @export
-#' @examples 
+#' @examples
 #' arrange(mcmc_data_example, species, homeworld)
-arrange.mcmc_data <- function(.data, ...){
+arrange.mcmc_data <- function(.data, ...) {
   chk_not_subset(colnames(.data$data), "..IDX")
-  
+
   data <- .data$data
   data$..IDX <- 1:nrow(data)
   data <- arrange(data, ...)
-  
+
   mcmc <- .data$mcmc
-  mcmc <- mcmc[,,data$..IDX,drop = FALSE]
+  mcmc <- mcmc[,, data$..IDX, drop = FALSE]
   class(mcmc) <- "mcmcarray"
-  
+
   data$..IDX <- NULL
 
   mcmc_data(mcmc, data)
