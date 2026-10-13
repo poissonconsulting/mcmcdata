@@ -9,11 +9,11 @@
 ## Citation
 
 Thorley J (2026). *mcmcdata: Manipulate MCMC Samples and Data Frames*. R
-package version 0.0.1.9003.
+package version 0.0.1.9004.
 
     @Manual{,
       title = {mcmcdata: Manipulate MCMC Samples and Data Frames},
       author = {Joe Thorley},
       year = {2026},
-      note = {R package version 0.0.1.9003},
+      note = {R package version 0.0.1.9004},
     }
