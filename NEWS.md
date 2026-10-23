@@ -1,5 +1,10 @@
 <!-- NEWS.md is maintained by https://fledge.cynkra.com, contributors should not edit this file -->
 
+# mcmcdata 0.0.1.9005
+
+- Same as previous version.
+
+
 # mcmcdata 0.0.1.9004
 
 - Same as previous version.
