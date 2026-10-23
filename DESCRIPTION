@@ -2,10 +2,7 @@ Package: mcmcdata
 Title: Manipulate MCMC Samples and Data Frames
 Version: 0.0.1.9004
 Authors@R: 
-    person(given = "Joe",
-           family = "Thorley",
-           role = c("aut", "cre"),
-           email = "joe@poissonconsulting.ca",
+    person("Joe", "Thorley", , "joe@poissonconsulting.ca", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-7683-4592"))
 Description: Manipulates Monte Carlo Markov Chain samples and associated
     data frames.
@@ -28,7 +25,9 @@ Suggests:
     covr,
     doParallel,
     testthat
+Remotes:
+    poissonconsulting/mcmcderive
+Config/Needs/website: poissonconsulting/poissontemplate
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.2.3
-Config/Needs/website: poissonconsulting/poissontemplate
