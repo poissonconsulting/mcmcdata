@@ -26,7 +26,7 @@ to see their documentation.
 
 - mcmcderive:
 
-  [`mcmc_derive`](https://rdrr.io/pkg/mcmcderive/man/mcmc_derive.html)
+  [`mcmc_derive`](https://poissonconsulting.github.io/mcmcderive/reference/mcmc_derive.html)
 
 - tidyr:
 
