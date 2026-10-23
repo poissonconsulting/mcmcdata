@@ -6,19 +6,19 @@ dplyr::filter
 #' @inheritParams dplyr::slice
 #' @param .data An mcmc_data object
 #' @export
-#' @examples 
+#' @examples
 #' filter(mcmc_data_example, species == "Droid")
-filter.mcmc_data <- function(.data, ...){
+filter.mcmc_data <- function(.data, ...) {
   chk_not_subset(colnames(.data$data), "..IDX")
-  
+
   data <- .data$data
   data$..IDX <- 1:nrow(data)
   data <- filter(data, ...)
-  
+
   mcmc <- .data$mcmc
-  mcmc <- mcmc[,,data$..IDX,drop = FALSE]
+  mcmc <- mcmc[,, data$..IDX, drop = FALSE]
   class(mcmc) <- "mcmcarray"
-  
+
   data$..IDX <- NULL
 
   mcmc_data(mcmc, data)

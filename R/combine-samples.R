@@ -1,7 +1,16 @@
 #' @export
-combine_samples.mcmc_data <- function(x, x2, fun = mean, by = NULL, suffix = c(".x", ".y"), ...) {
-  if (!is.mcmc_data(x2)) error("x2 must be an mcmc_data")
-  
+combine_samples.mcmc_data <- function(
+  x,
+  x2,
+  fun = mean,
+  by = NULL,
+  suffix = c(".x", ".y"),
+  ...
+) {
+  if (!is.mcmc_data(x2)) {
+    error("x2 must be an mcmc_data")
+  }
+
   chk_not_subset(colnames(x$data), c("..IDX", "..IDX2"))
   chk_not_subset(colnames(x2$data), c("..IDX", "..IDX2"))
 

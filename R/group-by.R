@@ -9,9 +9,9 @@ dplyr::ungroup
 #' @inheritParams dplyr::group_by
 #' @param .data An mcmc_data object
 #' @export
-#' @examples 
+#' @examples
 #' group_by(mcmc_data_example, homeworld, species)
-group_by.mcmc_data <- function(.data, ..., .add = FALSE){
+group_by.mcmc_data <- function(.data, ..., .add = FALSE) {
   .data$data <- dplyr::group_by(.data$data, ..., .add = .add)
   .data
 }
@@ -21,9 +21,9 @@ group_by.mcmc_data <- function(.data, ..., .add = FALSE){
 #' @inheritParams dplyr::group_by
 #' @param x An mcmc_data object
 #' @export
-#' @examples 
+#' @examples
 #' ungroup(mcmc_data_example)
-ungroup.mcmc_data <- function(x, ...){
+ungroup.mcmc_data <- function(x, ...) {
   x$data <- ungroup(x$data, ...)
   x
 }

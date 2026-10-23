@@ -6,8 +6,9 @@ set_class <- function(x, class) {
 }
 
 add_IDX <- function(data, number) {
-  if(any(grepl("^..IDX", colnames(data))))
+  if (any(grepl("^..IDX", colnames(data)))) {
     error("data must not include column names beginning with '..IDX'")
+  }
   data[paste0("..IDX", number)] <- 1:nrow(data)
   data
 }
@@ -18,8 +19,8 @@ rm_IDX <- function(data) {
 }
 
 filter_mcmcarray <- function(mcmc, number, data) {
-  mcmc <- mcmc[,,data[[paste0("..IDX", number)]],drop = FALSE]
+  mcmc <- mcmc[,, data[[paste0("..IDX", number)]], drop = FALSE]
   set_class(mcmc, "mcmcarray")
 }
 
-err <- function (...) stop(..., call. = FALSE, domain = NA)
+err <- function(...) stop(..., call. = FALSE, domain = NA)

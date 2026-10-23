@@ -13,3 +13,5 @@
 ^scripts$
 ^_pkgdown\.yml$
 ^pkgdown$
+^[.]?air[.]toml$
+^\.vscode$
